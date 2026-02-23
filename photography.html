@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LensCraft Photography</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:50px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* About Section */
+.about{
+    padding:60px 80px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* Gallery */
+.gallery{
+    padding:60px 50px;
+    background:#f4f4f4;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
+
+/* Contact */
+.contact{
+    padding:60px 50px;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input, .contact textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:10px 20px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:gold;
+    color:black;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>📸 LensCraft</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Capturing Moments That Matter</h2>
+</section>
+
+<!-- About -->
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a professional photographer passionate about capturing beautiful 
+        moments and turning them into lasting memories. From weddings to travel 
+        photography, I bring stories to life through my lens.
+    </p>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+    <h2>My Work</h2>
+    <div class="gallery-container">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="">
+        <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913" alt="">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 LensCraft Photography | All Rights Reserved
+</footer>
+
+</body>
+</html>
